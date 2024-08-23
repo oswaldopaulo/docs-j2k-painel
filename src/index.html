@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/global.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <title>Painel J2K Sistemas</title>
+    <link rel="icon" href="assets/j2k_logo.png" type="image/png">
+</head>
+    <body class="body">
+        <header class="py-3 mb-3 border-bottom header">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+                <div class="logo d-flex justify-content-center flex-grow-1">
+                    <img src="assets/j2k_logo.png" alt="Logo J2K" class="img-fluid logo-img">
+                </div>
+        
+                <button class="hamburger-menu d-block d-md-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                    </svg>
+                </button>
+            </div>
+        </header>
+
+        <!-- Corpo Principal -->
+        <div class="container mt-4" style="background-color: #EBEFF3;">
+            <div class="row" >
+
+                <!-- Menu à esquerda -->
+                <div class="col-md-3 nav-menu mobile-menu" id="nav-menu">
+
+                    <ul class="list-group menu">
+                        <li class="list-group-item borda"><a href="#" class="nav-link item px-4">
+                                Clientes
+                            </a>
+                        </li>
+
+                        <li class="list-group-item borda">
+                            <a class="nav-link collapsed item px-4" data-toggle="collapse" 
+                            aria-expanded="false" href="./routes/usuario/index.html">
+                            Usuário
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- Conteúdo no centro -->
+                <div class="col-md-9 cardPrincipal">
+                    <div class="card-md-4">
+                        <div class="card-body main-container">
+                          <div class="row">
+                            <div class="col-11">
+                              <h1><b>Painel J2K Sistemas</b></h1>
+                            </div>
+                          </div>
+                        </div>
+                      
+                    </div>
+
+                    <div class="card-md-4">
+                        <div class="card-body main-container" style="margin-top: 2%;">
+                            <div class="container">
+                                <h2>Clientes</h2>
+                                <p>
+                                    A aba <strong>"Clientes"</strong> no painel J2K sistemas é destinada ao gerenciamento de informações 
+                                    dos clientes. Nessa aba, os usuários podem acessar e atualizar os dados somente de 
+                                    seus respectivos clientes, fazer a instalação dos programas tanto SNDESK quanto GOCRM, 
+                                    fazer a criação de um banco e a clonagem do sistema para uso. 
+
+                                    <br><br>
+                                    <h3>Para criação de um Cliente:</h3>
+                                    <ul>
+                                        <li>Na aba esquerda em <strong>“MENU”</strong>.</li>
+                                        <li>Clique em <strong>“CLIENTES”</strong>.</li>
+                                        <li>Na tela de clientes, você verá uma lista de clientes já cadastrados ou estará vazio caso não tenha feito nenhum cadastro ainda.</li>
+                                        <li>Para adicionar um novo cliente, clique em <strong>"+ NOVO CLIENTE"</strong>.</li>
+                                        <li>Caso deseja acessar um cliente já cadastrado, basta seleciona-lo.</li>
+                                        <li>Preencha os campos com as informações do cliente, sendo requerido <strong>Nome, Domínio, CPF/CNPJ.</strong></li>
+                                      </ol>
+
+                                    </ul>
+
+                                    <br><br>
+                                    <h3>Funções:</h3>
+                                    Acesse opções em <strong>"Escolha seu sistema"</strong>:
+                                    <ul>
+                                        <li>
+                                            <strong>INSTALAR MANUALMENTE</strong>
+                                            <ul>
+                                                <li>Programa: selecione o programa(SNDESK ou GOCRM)</li>
+                                                <li>Url: Insira a url com seu domínio.</li>
+                                                <li>Após ser adicionado o programa no sistema do cliente, poderá ser visualizado algumas informações da instalação.</li>
+                                            </ul>
+                                        </li>
+
+                                        <li>
+                                            <strong>CRIAR BANCO</strong>:
+                                            <ul>
+                                                <li>Nome do banco é criado com base no domínio.</li>
+                                                <li>Cria banco e usuário.</li>
+                                            </ul>
+                                        </li>
+
+                                        <li>
+                                            <strong>CLONAR REPOSITÓRIO</strong>:
+                                            <ul>
+                                                <li>Faz a clonagem do sistema no servidor.</li>
+                                            </ul>
+                                        </li>
+
+                                       
+                                      </ol>
+
+                                    </ul>
+                                </p>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+<script src="js/script.js"></script>
